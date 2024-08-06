@@ -1,0 +1,91 @@
+.register{
+    height: 100vh;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    .card{
+        width: 50%;
+        min-height: 75% ;
+        background-color: white;
+        display: flex;
+        border-radius: 10px;
+        overflow: hidden;
+
+        .left{
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 20px 50px;
+            gap: 20px;
+
+            h1{
+                font-size: 25px;
+                color: gray;
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+            }
+            input{
+                border: none;
+                border-bottom: 1px solid gray;
+                padding: 10px 15px;
+            }
+
+            input:focus{
+                outline: none;
+            }
+            button{
+                width: 100%;
+                padding: 10px 10px;
+                background-color: rebeccapurple;
+                color: white;
+                font-weight: bold;
+                cursor: pointer;
+                border: none;
+                border-radius: 5px;
+            }
+        }
+        .right{
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 0px 50px;
+            background-image: linear-gradient(rgba(73, 52, 115, 0.5), rgba(79, 58, 122, 0.5)), url("./images/login.png");
+            background-size: cover;
+            background-position: center;
+            gap: 10px;
+
+
+            h1{
+                color: white;
+                font-size: 80px;
+                // line-height: 0px;
+            }
+            p{
+                color: lightgray;
+            }
+            span{
+                font-size: 14px;
+                color: white;
+                font-weight: bold;
+            }
+            button{
+                width: 50%;
+                padding: 10px;
+                background-color: white;
+                border: none;
+                color: rebeccapurple;
+                font-weight: bold;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        }
+    }
+}

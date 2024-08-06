@@ -1,0 +1,17 @@
+@import "../../style.scss";
+
+.profile{
+    @include themify($themes){
+        background-color: themed("bgsoft");
+        height: 100vh;
+        position: sticky;
+        top: 70px;
+        height: calc(100vh - 70px);
+        overflow: scroll;
+        color: themed('textColor');
+        &::-webkit-scrollbar{
+            display: none;
+        }
+    }
+    
+}
